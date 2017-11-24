@@ -1,4 +1,4 @@
-# hatch-template-project - replace with your project name
+# team17-hatch-project - replace with your project name
 
 This template project should be forked by hatch teams.
 
