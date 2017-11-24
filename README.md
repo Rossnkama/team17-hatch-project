@@ -8,8 +8,8 @@ This project was developed during [hatchlondon 2017](http://hatchlondon.io).
 
 Tick items off as you go along.
 
-- [ ] 1. [Sign up](https://help.github.com/articles/signing-up-for-a-new-github-account/) for a free GitHub account
-- [ ] 2. [Fork](https://help.github.com/articles/fork-a-repo/) this project
+- [x] 1. [Sign up](https://help.github.com/articles/signing-up-for-a-new-github-account/) for a free GitHub account
+- [x] 2. [Fork](https://help.github.com/articles/fork-a-repo/) this project
 - [ ] 3. Add your forked repo from `step 2` to this [project](https://github.com/SheCanCodeHQ/hatchlondon-2017-projects) as a [Pull Request](https://help.github.com/articles/about-pull-requests/)
 
 ### Project setup
