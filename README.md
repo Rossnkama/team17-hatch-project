@@ -37,10 +37,10 @@ From now on it is in your **Forked** repo
 
 Include all members of your team for the hack here:
 
-* Full Name [github](link to github profile)
-* Full Name [github](link to github profile)
-* Full Name [github](link to github profile)
-* Full Name [github](link to github profile)
+* Dickson Chong [github](link to github profile)
+* Leila Carla Illanes Mayta [github](link to github profile)
+* Ross Nkama [github](link to github profile)
+* Elena Rastorgueva [github](https://github.com/elenaras)
 
 ## Problem and Solution
 
