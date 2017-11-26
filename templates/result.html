@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+   <body>
+   <p> Thank you for making your request. You have requested:</p>
+      <table border = 1>
+         {% for key, value in result.iteritems() %}
+         
+            <tr>
+               <th> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr>
+            
+         {% endfor %}
+      </table>
+
+    <p>Your request is now available for local farmers to review.</p>
+      
+   </body>
+</html>

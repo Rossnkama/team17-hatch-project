@@ -1,34 +1,23 @@
-from flask import Flask
+from flask import Flask, render_template, request
 from twilio.twiml.voice_response import VoiceResponse
-from flask import render_template
-
-import cgi
-
 app = Flask(__name__)
 
+@app.route('/')
+def buyer():
+    return render_template('buyer.html')
 
-form = cgi.FieldStorage()
+@app.route('/result', methods = ['POST', 'GET'])
+def result():
+   if request.method == 'POST':
+      global result
+      result = request.form
+      return render_template("result.html",result = result)
 
-
-stuff = []
-
-@app.route("/", methods=['GET', 'POST'])
-def hello_monkey():
-    """Respond to incoming requests."""
+@app.route('/twilio', methods = ['POST', 'GET'])
+def twilio():
     resp = VoiceResponse()
-
-    for thing in stuff:
-	    resp.say(thing)
-
+    resp.say("Hello there. A request has been submitted for " + result['Quantity'] + " kilograms of " + result['Product']+ ". Please contact " + result['Phone'] + " to arrange a deal.")
     return str(resp)
 
-@app.route('/hello/')
-@app.route('/hello/<name>')
-def hello(name = None):
-	stuff.append('Something')
-	print request.GET['username']
-	print request.POST['username']
-	return render_template('./index.html', name=name)
-
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+   app.run(debug = True)
